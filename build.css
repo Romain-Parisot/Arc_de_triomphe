@@ -232,6 +232,21 @@ footer a:hover {
   width: 300px;
 }
 
+.mentionleg .lienext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.187);
+}
+.mentionleg .h3ml {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 .py-1 {
   padding-top: 10px;
 }

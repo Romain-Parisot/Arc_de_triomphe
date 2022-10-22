@@ -267,6 +267,19 @@ footer{
 
 }
 
+.mentionleg{
+    .lienext{
+        @include mixins.flexc;
+        margin-bottom: 30px;
+        color: rgba(0, 0, 0, 0.187);
+    }
+    .h3ml{
+        @include mixins.flexc;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
 @for $i from 1 through 6 {
     .py-#{$i} {
         padding-top: 10px * $i;
