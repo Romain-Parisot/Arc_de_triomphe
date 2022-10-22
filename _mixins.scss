@@ -9,6 +9,13 @@
     
 }
 
+@mixin flexc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 @mixin breakpoint($width) {
     @media screen and (max-width: $width) {
         @content;
