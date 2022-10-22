@@ -36,6 +36,17 @@ h2 {
   margin-top: 30px;
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textaligncenter {
+  text-align: center;
+}
+
 header {
   background-color: #fff;
   position: sticky;
@@ -175,13 +186,6 @@ footer a:hover {
   margin-bottom: 100px;
 }
 
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .hist {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -247,43 +251,28 @@ footer a:hover {
   margin-bottom: 30px;
 }
 
-.py-1 {
-  padding-top: 10px;
+@media screen and (max-width: 800px) {
+  .hist {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .pres .containerCardPres {
+    flex-direction: column;
+  }
+  .pres .containerCardPres .cardpres {
+    margin-bottom: 50px;
+  }
+  .pres .containerCardPres .imgCardPres {
+    height: 30vh;
+  }
 }
-
-.py-2 {
-  padding-top: 20px;
-}
-
-.py-3 {
-  padding-top: 30px;
-}
-
-.py-4 {
-  padding-top: 40px;
-}
-
-.py-5 {
-  padding-top: 50px;
-}
-
-.py-6 {
-  padding-top: 60px;
-}
-
-.padding-small {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.padding-medium {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.padding-large {
-  padding-top: 30px;
-  padding-bottom: 30px;
+@media screen and (max-width: 600px) {
+  .pres .containerCardPres .imgCardPres {
+    height: 20vh;
+  }
 }
 
 /*# sourceMappingURL=build.css.map */

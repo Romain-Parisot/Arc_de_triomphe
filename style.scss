@@ -38,6 +38,17 @@ h2{
     margin-top: 30px;
 }
 
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textaligncenter{
+    text-align: center;
+}
+
 header{
     background-color: #fff;
     position: sticky;
@@ -214,14 +225,6 @@ footer{
     }
 }
 
-.contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
 .hist{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -264,7 +267,6 @@ footer{
             width: 300px;
         }
     }
-
 }
 
 .mentionleg{
@@ -280,18 +282,37 @@ footer{
     }
 }
 
-@for $i from 1 through 6 {
-    .py-#{$i} {
-        padding-top: 10px * $i;
-
+// responsive 
+@media screen and (max-width: 800px) {
+    .hist{
+        display: flex;
+        flex-direction: column
     }
-}
-
-$values:"small" 10px, "medium" 20px, "large" 30px;
-@each $name ,$values in $values {
-    .padding-#{$name}{
-        padding-top: $values;
-        padding-bottom: $values;
+    h1{
+        font-size: 30px;
+    }
+    .pres{
+        .containerCardPres{
+            flex-direction: column;
+            .cardpres{
+                margin-bottom: 50px;
+            }
+            .imgCardPres{
+                height: 30vh;
+            }
+        }
     }
     
 }
+
+@media screen and (max-width: 600px) {
+    .pres{
+        .containerCardPres{
+            .imgCardPres{
+                height: 20vh;
+            }
+        }
+    }
+    
+}
+
